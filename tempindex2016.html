@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3D Globe</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #globe {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #bottomImage {
+            position: absolute;
+            bottom: 80px;
+            left: 80%;
+            
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <canvas id="globe"></canvas>
+    <!-- Add an image at the bottom of the 3D model -->
+    <div id="bottomImage">
+        <img src="/dex.png" alt="Bottom Image" width="400">
+        <img src="/scale.png" alt="Bottom Image" width="400">
+    </div>
+
+    <script src="./three.js"></script>
+    <script src="./temperature/tempmain2016.js"></script>
+</body>
+</html>

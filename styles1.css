@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,400;0,600;0,800;1,100;1,300;1,400;1,600;1,800&family=Orbitron:wght@400;600;900&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Orbitron', sans-serif;
+    overflow: hidden;
+  }
+  
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  
+  .menu-bar {
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 50px;
+    border-top: 50px;
+ /*   position: absolute;
+    top: 0;
+/* Initially hide the menu bar off the screen */
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    z-index: 1; /* Bring the menu bar to the front */
+    transition: left 0.5s ease;
+    /* Remove the background */
+    background: none;
+    
+  }
+  
+  
+  .menu-item {
+    font-family: 'Orbitron', sans-serif;
+    margin: 10px;
+    margin-top: 40px;
+   
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 60px;
+    margin-left: 100px;
+    transition: background-color 0.3s ease;
+    position: relative;
+    text-align: justify;
+    display: block;
+  }
+  
+  /* Underline effect pseudo-element */
+  .menu-item::before {
+    content: "";
+    position: absolute;
+    bottom: -8px; /* Distance of the underline from the text */
+    left: 0;
+    width: 0;
+    height: 2px;
+ background-color: aqua;/* Underline color */
+    transition: width 0.3s ease; /* Transition for the underline animation */
+  }
+  
+  /* Hover effect to reveal the underline from left to right */
+  .menu-item:hover::before {
+    width: 100%;
+  }
+  
+  .video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .h3{
+    color: aqua;
+    border-left: 20px;
+margin-top: 100px;
+margin-bottom: 80px;
+}
+  .header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #c4bcbc;
+    font-size: 24px;
+    z-index: 1; /* Bring the header to the front */
+  }
+  
+  .header::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    opacity: 0.7;
+    border-radius: 0 0 50% 50%;
+    z-index: -1; /* Send the gradient background to the back */
+  }
+  
